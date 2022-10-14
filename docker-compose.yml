@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    ports:
+      - "8000:5000"
+    volumes:
+      - D:\anahuac\7mo_semestre\moviles\docker\docker_init:/code
+  redis:
+    image: "redis:alpine"
